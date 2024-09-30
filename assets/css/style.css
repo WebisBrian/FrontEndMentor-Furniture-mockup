@@ -159,6 +159,7 @@ h3 {
     }
 
     #section-img-btn {
+        background-image: url(../img/desktop-image-hero-1.jpg);
         width: 60%;
         height: 65vh;
     }
