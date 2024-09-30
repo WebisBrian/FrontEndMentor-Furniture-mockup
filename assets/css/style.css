@@ -1,0 +1,245 @@
+/*  RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img, input {
+    vertical-align: bottom;
+    width: 100%;
+}
+
+/* FONT & Police*/
+
+@font-face {
+    font-family: "Spartan";
+    src: url(../font/LeagueSpartan-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #AAAAAA;
+}
+
+/* REGLAGES */
+
+html {
+    --scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+
+/*  HEADER  */
+
+header {
+    width: 100%;
+}
+
+/* MAIN */
+
+main {
+    width: 100%;
+    height: 100vh;
+}
+
+/* SECTION 1 - Image + BTN */
+
+#section-img-btn {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    z-index: 2;
+    background-image: url(../img/mobile-image-hero-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.block-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 27%;
+    height: 6vh;
+    background-color: black;
+    color:#AAAAAA;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    max-width: 10rem;
+    min-width: 7rem;
+}
+
+/*  SECTION 2 - Titre2 + texte + Bouton shopping */
+
+#section-shopping {
+    padding: 4rem 2rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: black;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.1rem;
+    padding: 1.5rem 0 1rem 0;
+}
+
+.shop-btn {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 1rem;
+}
+
+/* SECTION 3 - Img-dark */
+
+#section-img-dark {
+    width: 100%;
+    height: 30vh;
+    background-image: url(../img/image-about-dark.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#section-shopping .block-btn{
+    display: none;
+}
+
+/* SECTION 4 - About */
+
+#section-about {
+    padding: 4rem 2rem;
+}
+
+h3 {
+    color: black;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.4rem;
+}
+
+/* SECTION 5 - Img-light */
+
+#section-img-light {
+    width: 100%;
+    height: 30vh;
+    background-image: url(../img/image-about-light.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+@media screen and (min-width: 600px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100vh;
+    }
+    #section-img-btn,
+    #section-shopping,
+    #section-img-dark,
+    #section-about,
+    #section-img-light {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 1rem;
+    }
+
+    #section-img-btn {
+        width: 60%;
+        height: 65vh;
+    }
+    #section-shopping {
+        position: relative;
+        width: 40%;
+        height: 65vh;
+    }
+
+    #section-shopping p {
+        font-size: 1rem;
+        padding: 1.5rem 0 1rem 0;
+    }
+
+    .shop-btn {
+        font-size: 1rem;
+        letter-spacing: 0.3rem;
+    }
+
+    #section-shopping .block-btn {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    #section-img-dark {
+        width: 30%;
+        height: 35vh;
+    }
+    #section-about {
+        width: 40%;
+        height: 35vh;
+    
+    }
+    h3 {
+        letter-spacing: 0.1rem;
+    }
+    #section-img-light {
+        width: 30%;
+        height: 35vh;
+    }
+    #section-img-btn .block-btn {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #section-img-btn,
+    #section-shopping,
+    #section-img-dark,
+    #section-about,
+    #section-img-light {
+        padding: 2rem 2rem;
+    }
+    
+    p {
+        font-size: 1rem;
+        padding: 1.5rem 0 2.5rem 0;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    #section-img-btn,
+    #section-shopping,
+    #section-img-dark,
+    #section-about,
+    #section-img-light {
+        padding: 3rem 3rem;
+
+    }
+
+    .shop-btn {
+        font-size: 1.1rem;
+        letter-spacing: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: 1.5rem 0 2.5rem 0;
+    }
+} 
